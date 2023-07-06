@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
 import 'package:library_app/app/data/models/books.dart';
+import 'package:http/http.dart' as http;
 
-void main() {
+class HomeController extends GetxController {
   final apiUrl = "http://127.0.0.1:3000/book";
 
   Future<List<Books>> getBooks() async {
